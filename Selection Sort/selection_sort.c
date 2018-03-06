@@ -1,3 +1,6 @@
+/*ALUNO: JORDY ALLYSON DE SOUSA LIMA
+  MATRICULA: 11426758*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
