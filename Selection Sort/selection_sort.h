@@ -1,3 +1,3 @@
-void Selection_Sort(int *vetor);
+void Selection_Sort(int *vetor, int max);
 
- int i, j, temp, min;
+ int i, j;

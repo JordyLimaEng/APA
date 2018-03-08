@@ -4,32 +4,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void Selection_Sort(int *vetor){
+void Selection_Sort(int *vetor, int max){
 
-    int i, j, temp, min, vezes=0, max=0;
-	char c, letra = '\n';
+ int i=0, j=0, min=0, temp=0;
 
     FILE *ler;
-//------------------------------------------------------------
-//Faz a contagem do número de linhas (ou números) do arquivo de entrada.
-    ler = fopen("couting.txt", "r");
 
-	while(fread(&c, sizeof(char),1, ler)){
-	if(c == letra) {vezes++;}
-	}
-//	printf("o arquivo possui %d linhas", vezes+1);
-//------------------------------------------------------------
-
-	max = vezes+1; //Atribui a contagem de números 
-                   //máximo a variável "max" da contagem
-//------------------------------------------------------------
-	ler = fopen("couting.txt", "r");
+	ler = fopen("num.100000.4.in", "r");
     for(i=0; i<max; i++){
         fscanf(ler, "%d/n", &vetor[i]); //lê os valores do arquivo
+		//printf("\t%d\n", vetor[i]);
     }
 
 
-    ler = fopen("coutingOrdenado.txt", "w");
+    ler = fopen("num.100000.4.in.Ordenado.txt", "w");
 //*************************************************************
 //Implementação do método de ordenação
 
