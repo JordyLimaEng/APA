@@ -1,3 +1,4 @@
-void Insertion_Sort(int *vetor);
 
- int i, j, temp;
+void Insertion_Sort(int *vetor, int max);
+
+ int i, j;
