@@ -17,7 +17,7 @@ void Insertion_Sort(int *vetor, int max){
     }
 
 
-    ler = fopen("num.1000.1.in.Ordenado.txt", "w");
+    ler = fopen("Arquivo_a_ser_ordenado.Ordenado.txt", "w");
 /*************************************************************/
 //Implementação do método de ordenação
 /************************************************************/
