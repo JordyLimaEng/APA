@@ -6,3 +6,5 @@
    #./main
    
    Após isso, cria-se o arquivo "Nome.Do.Arquivo.Ordenado.txt", a partir do arquivo arquivo desordenado.
+   
+   OBS.: onde estiver "Arquivo_a_ser_ordenado" alterar pelo nome do arquivo que se quer ordenar, garantindo-se que está no mesmo diretório.
