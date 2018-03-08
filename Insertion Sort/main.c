@@ -9,8 +9,8 @@ int main()
 
     FILE *ler;
 //------------------------------------------------------------
-//Faz a contagem do número de linhas (ou números) do arquivo de entrada.
-    ler = fopen("num.1000.1.in", "r");
+//Faz a contagem do nÃºmero de linhas (ou nÃºmeros) do arquivo de entrada.
+    ler = fopen("Arquivo_a_ser_ordenado", "r");
     while(fread(&c, sizeof(char),1, ler)){
 	if(c == letra) {vezes++;}
 	}
@@ -18,8 +18,8 @@ int main()
 	fclose(ler);
 	printf("o arquivo possui %d linhas\n", vezes+1);
 
-	max = vezes+1;//Atribui a contagem de números
-                   //máximo a variável "max" da contagem
+	max = vezes+1;//Atribui a contagem de nÃºmeros
+                   //mÃ¡ximo a variÃ¡vel "max" da contagem
 //------------------------------------------------------------
     int vetor[max];
 
