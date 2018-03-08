@@ -10,14 +10,14 @@ void Selection_Sort(int *vetor, int max){
 
     FILE *ler;
 
-	ler = fopen("num.100000.4.in", "r");
+	ler = fopen("Arquivo_a_ser_ordenado", "r");
     for(i=0; i<max; i++){
         fscanf(ler, "%d/n", &vetor[i]); //lê os valores do arquivo
 		//printf("\t%d\n", vetor[i]);
     }
 
 
-    ler = fopen("num.100000.4.in.Ordenado.txt", "w");
+    ler = fopen("Arquivo_a_ser_ordenado.Ordenado.txt", "w");
 //*************************************************************
 //Implementação do método de ordenação
 
