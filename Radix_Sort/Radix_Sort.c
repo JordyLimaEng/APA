@@ -50,7 +50,6 @@ int main(){
   int x;
   int vetor[ELEMENTOS];
   FILE *arq;
-  int range;
 
   arq = fopen( "couting.txt", "r" );
 
