@@ -58,7 +58,7 @@ void heapSort(int vetor[], int max)
         // Raiz atual vai para o final
         troca(&vetor[0], &vetor[i]);
 
-        // chamada recursiva para reduzir a árvore
+        // chamada para reduzir a árvore
         heapify(vetor, i, 0);
     }
 }
