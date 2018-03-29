@@ -36,7 +36,7 @@ void heapify(int vetor[], int max, int i)
     if (dir < max && vetor[dir] > vetor[maior])
         maior = dir;
 
-    // Se o maior não é a raiz
+    // Se o maior nÃ£o Ã© a raiz
     if (maior != i)
     {
         troca(&vetor[i], &vetor[maior]);
@@ -48,17 +48,17 @@ void heapify(int vetor[], int max, int i)
 
 void heapSort(int vetor[], int max)
 {
-    // Constrói a árvore e chama recursivamente
+    // ConstrÃ³i a Ã¡rvore e chama heapify
     for (int i = max / 2 - 1; i >= 0; i--)
         heapify(vetor, max, i);
 
-    // Tira elemento por elemento da árvore e chama recursivamente
+    // Tira elemento por elemento da Ã¡rvore 
     for (int i=max-1; i>=0; i--)
     {
         // Raiz atual vai para o final
         troca(&vetor[0], &vetor[i]);
 
-        // chamada recursiva para reduzir a árvore
+        // chamada para reduzir a Ã¡rvore
         heapify(vetor, i, 0);
     }
 }
@@ -70,7 +70,7 @@ int main()
 
 	FILE *ler;
 //------------------------------------------------------------
-//Faz a contagem do número de linhas (ou números) do arquivo de entrada.
+//Faz a contagem do nÃºmero de linhas (ou nÃºmeros) do arquivo de entrada.
     ler = fopen("Arquivo_a_ser_ordenado", "r");
     while(fread(&c, sizeof(char),1, ler)){
 	if(c == letra) {vezes++;}
@@ -79,8 +79,8 @@ int main()
 
 	printf("o arquivo possui %d linhas\n", vezes+1);
 
-	max = vezes+1;//Atribui a contagem de números
-                   //máximo a variável "max" da contagem
+	max = vezes+1;//Atribui a contagem de nÃºmeros
+                   //mÃ¡ximo a variÃ¡vel "max" da contagem
 //------------------------------------------------------------
 
     int vetor[max];
