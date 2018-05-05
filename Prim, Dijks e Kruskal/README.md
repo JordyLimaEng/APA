@@ -1,5 +1,4 @@
-Gulosos
-Pasta criada para os algoritmos PRIM, Dijkistra e Kruskal
+PRIM, Dijkistra e Kruskal
 
 Para usar o Algoritmo de PRIM:
 Deve-se comentar a função do Dijkistra e executar make
